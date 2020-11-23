@@ -13,34 +13,105 @@
           <a class="logo-link" href="#0">
             <img src="svg/noemi-logo.svg" class="logo" alt="логотип NOEMI">
           </a>
-          <nav class="nav">
-            <ul class="menu-list">
-              <li class="menu-list-item">
-                <a href="#0" class="list-item-link">главная</a>
-              </li>
-              <li class="menu-list-item">
-                <a href="#0" class="list-item-link">посты</a>     
-              </li>
-              <li class="menu-list-item">
-                <a href="#0" class="list-item-link">статьи</a>
-              </li>
-              <li class="menu-list-item">
-                <a href="#0" class="list-item-link">теги</a>
-              </li>
-              <li class="menu-list-item">
-                <a href="#0" class="list-item-link">темы</a>
-              </li>
-              <li class="menu-list-item">
-                <a href="#0" class="list-item-link">контакты</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="menu-box">
+            <button class="menu-button">
+              <span class="menu-button-span">
+                меню
+              </span>
+            </button>
+            <nav class="nav">
+              <ul class="menu-list">
+                <li class="menu-list-item">
+                  <a href="#0" class="list-item-link">главная</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#0" class="list-item-link">посты</a>     
+                </li>
+                <li class="menu-list-item">
+                  <a href="#0" class="list-item-link">статьи</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#0" class="list-item-link">теги</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#0" class="list-item-link">темы</a>
+                </li>
+                <li class="menu-list-item">
+                  <a href="#0" class="list-item-link">контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>          
         </div>
-        <h1 class="title">блог о творчестве, спорте, и образе жизни</h1> 
+        <h1 class="header-title">
+          блог о творчестве, спорте, и образе жизни
+        </h1> 
       </div>
     </header>
 
     <div class="main-box">
+      <div class="popup-box">
+        <div class="popup">
+          <div class="popup-close-button">
+            <a class="popup-close-button_link" href="#0">
+              <span class="visually-hidden">
+                закрыть окно
+              </span>
+            </a>
+          </div>
+          <div class="popup-content">
+            <h2 class="popup-title">
+              Ваш ФИДБЕК
+            </h2>
+            <form class="popup-form" >
+              <div class="popup-periodicity-box">
+                <label class="popup-periodicity-label">
+                  <span class="popup-periodicity-label_text">
+                    Как часто вы заходите на сайт?
+                  </span>
+                  <select class="popup-periodicity-select">
+                    <option selected>Почти каждый день</option>
+                    <option>Раз в несколько дней</option>
+                    <option>Раз в несколько недель</option>
+                    <option>Несколько раз в год</option>  
+                  </select>
+                </label>
+              </div>
+              <div class="popup-mailing-box">
+                <span class="popup-mailing-ask">
+                  Вы подписаны на e-mail рассылку?
+                </span>
+                <div class="popup-mailing-label-box">
+                  <label class="popup-mailing-label">
+                    <input class="popup-mailing-radio" 
+                    type="radio" name="mailing-radio" required>
+                    <span class="popup-mailing-radio_text">Да</span>
+                  </label>
+                  <label class="popup-mailing-label">
+                    <input class="popup-mailing-radio" type="radio" name="mailing-radio" required>
+                    <span class="popup-mailing-radio_text">Нет</span>
+                  </label>
+                </div>
+              </div>
+              <div class="popup-subject-box">
+                <label class="popup-subject-label">
+                  <span class="popup-subject-label_text">
+                    Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+                  </span>
+                  <textarea class="popup-subject-textarea" placeholder="Может, больше рецептов?"required></textarea>                  
+                </label>
+              </div>
+              <div class="popup-button-box">
+                <button class="popup-button" type="submit">
+                  <span class="popup-button-text">Отправить</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+                  
       <section class="trends-box">
         <h2 class="trends-title">
           <a class="trends-title_link" href="#0">cейчас в тренде</a>
@@ -109,7 +180,9 @@
       <div class="main-info">
         <main class="posts-list">
           <article class="post">
-            <img class="post-img" src="images/last-post1.jpg" alt="картинка красивый вид">
+            <div class="post-img-box">
+              <img class="post-img" src="images/last-post1.jpg" alt="картинка красивый вид">
+            </div>            
             <div class="post-info">
               <div class="post-info-header">
                 <ul class="post-tags_list">
@@ -132,7 +205,9 @@
             </div>
           </article>
           <article class="post">
-            <img class="post-img" src="images/last-post2.jpg" alt="картинка девушка занимается йогой на пляже">
+            <div class="post-img-box">
+              <img class="post-img" src="images/last-post2.jpg" alt="картинка девушка занимается йогой на пляже">
+            </div>            
             <div class="post-info">
               <div class="post-info-header">
                 <ul class="post-tags_list">
@@ -155,7 +230,9 @@
             </div>
           </article>
           <article class="post">
-            <img class="post-img" src="images/last-post3.jpg" alt="картинка девушка на фестивале">
+            <div class="post-img-box">
+              <img class="post-img" src="images/last-post3.jpg" alt="картинка девушка на фестивале">
+            </div>            
             <div class="post-info">
               <div class="post-info-header">
                 <ul class="post-tags_list">
@@ -176,7 +253,9 @@
             </div>
           </article>
           <article class="post">
-            <img class="post-img" src="images/last-post4.jpg" alt="картинка накрытый стол на кухне">
+            <div class="post-img-box">
+              <img class="post-img" src="images/last-post4.jpg" alt="картинка накрытый стол на кухне">
+            </div>            
             <div class="post-info">
               <div class="post-info-header">
                 <ul class="post-tags_list">
@@ -199,7 +278,9 @@
             </div>
           </article>
           <article class="post">
-            <img class="post-img" src="images/last-post5.jpg" alt="картинка подушка с принтом">
+            <div class="post-img-box">
+              <img class="post-img" src="images/last-post5.jpg" alt="картинка подушка с принтом">
+            </div>            
             <div class="post-info">
               <div class="post-info-header">
                 <ul class="post-tags_list">
@@ -224,8 +305,8 @@
               <p class="text">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
             </div>
           </article>
-        </main>
-  
+        </main> 
+
         <aside class="sidebar">
           <section class="section-aside-posts">
             <h2 class="aside-posts-title">
@@ -233,7 +314,9 @@
             </h2>
             <div class="aside-posts-list">
               <article class="aside-post">
-                <img class="aside-post-img" src="images/2.jpg" alt="картинка красивый вид">
+                <div class="aside-img-post">
+                  <img class="aside-post-img" src="images/2.jpg" alt="картинка красивый вид">
+                </div>               
                 <div class="aside-post-info">
                   <time pubdate class="aside-data-post">14 июня 2019</time>
                   <h3 class="aside-post-title">
@@ -242,7 +325,9 @@
                 </div>     
               </article>
               <article class="aside-post">
-                <img class="aside-post-img" src="images/151.jpg" alt="девушка занимается йогой на пляже">
+                <div class="aside-img-post">
+                  <img class="aside-post-img" src="images/151.jpg" alt="девушка занимается йогой на пляже">
+                </div>                
                 <div class="aside-post-info">
                   <time pubdate class="aside-data-post">14 июня 2019</time>
                   <h3 class="aside-post-title">
@@ -251,7 +336,9 @@
                 </div>
               </article>
               <article class="aside-post">
-                <img class="aside-post-img" src="images/45.jpg" alt="картинка оборудовано место под балкон">
+                <div class="aside-img-post">
+                  <img class="aside-post-img" src="images/45.jpg" alt="картинка оборудовано место под балкон">
+                </div>                
                 <div class="aside-post-info">
                   <time pubdate class="aside-data-post">14 июня 2019</time>
                   <h3 class="aside-post-title">
@@ -260,7 +347,9 @@
                 </div>  
               </article>
               <article class="aside-post">
-                <img class="aside-post-img" src="images/501.jpg" alt="картинка накрытый стол на кухне">
+                <div class="aside-img-post">
+                  <img class="aside-post-img" src="images/501.jpg" alt="картинка накрытый стол на кухне">
+                </div>                
                 <div class="aside-post-info">
                   <time pubdate class="aside-data-post">14 июня 2019</time>
                   <h3 class="aside-post-title">
@@ -269,7 +358,10 @@
                 </div>
               </article>
               <article class="aside-post">
-                <img class="aside-post-img" src="images/7.jpg" alt="картинка три девушки с длинными волосами">
+                <div class="aside-img-post">
+                  <img class="aside-post-img" src="images/7.jpg" alt="картинка три девушки с длинными волосами">
+                </div>
+                
                 <div class="aside-post-info">
                   <time pubdate class="aside-data-post">14 июня 2019</time>
                   <h3 class="aside-post-title">
@@ -361,15 +453,29 @@
             </ul>    
           </section> 
         </aside>
-
       </div>
+
       <section class="shop-box">
         <h2 class="shop-title">
           <a class="shop-title_link" href="#0">наши изделия</a>
         </h2>
         <div class="shop-products-list">
           <article class="products-item">
-            <img class="products-img" src="images/shop-item-desk1.jpg" alt="фото подушки на диван с модным принтом">
+            <picture>
+              <source class="products-img"
+                media="(min-width: 1200px)"
+                srcset="images\shop-item-desk1.jpg">
+              <source class="products-img"
+                media="(min-width: 641px) and (max-width: 1199px)"
+                srcset="images\shop-item-tablet1.jpg">
+              <source class="products-img"
+                media="(max-width: 640px)"
+                srcset="images\shop-item-mobile1.jpg">
+              <img class="products-img" 
+                src="images\shop-item-desk1.jpg" 
+                alt="фото куклы «Зайчик»">
+            </picture>
+            
             <div class="products-info">
               <h3 class="products-info_title"> 
                 <a class="products-title_link" href="#0">
@@ -401,11 +507,22 @@
               </div>
 
             </div>
-
-
           </article>
           <article class="products-item">
-            <img class="products-img" src="images/shop-item-desk2.jpg" alt="фото куклы «Зайчик»">
+            <picture>
+              <source class="products-img"
+                media="(min-width: 1200px)"
+                srcset="images/shop-item-desk2.jpg">
+              <source class="products-img"
+                media="(min-width: 641px) and (max-width: 1199px)"
+                srcset="images\shop-item-tablet2.jpg">
+              <source class="products-img"
+                media="(max-width: 640px)"
+                srcset="images\shop-item-mobile2.jpg">
+              <img class="products-img" 
+                src="images/shop-item-desk2.jpg" 
+                alt="фото куклы «Зайчик»">
+            </picture>
             <div class="products-info">
               <h3 class="products-info_title"> 
                 <a class="products-title_link" href="#0">
@@ -435,13 +552,23 @@
                   в магазин
                 </button>
               </div>
-
             </div>
-
-
           </article>
           <article class="products-item">
-            <img class="products-img" src="images/shop-item-desk3.jpg" alt="фото естиугольной рамки">
+            <picture>
+              <source class="products-img"
+                media="(min-width: 1200px)"
+                srcset="images/shop-item-desk3.jpg">
+              <source class="products-img"
+                media="(min-width: 641px) and (max-width: 1199px)"
+                srcset="images\shop-item-tablet3.jpg">
+              <source class="products-img"
+                media="(max-width: 640px)"
+                srcset="images\shop-item-mobile3.jpg">
+              <img class="products-img" 
+                src="images/shop-item-desk3.jpg" 
+                alt="фото естиугольной рамки">
+            </picture>            
             <div class="products-info">
               <h3 class="products-info_title"> 
                 <a class="products-title_link" href="#0">
@@ -475,10 +602,8 @@
 
 
           </article>
-        </div>
-        
+        </div>        
       </section>
-
     </div>
 
     <footer class="footer">
