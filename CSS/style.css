@@ -1564,11 +1564,15 @@ position: relative;
   .aside-post:nth-child(n+2) {
     margin-top: 6.7%;
   }
-  .aside-post-img {
+  aside-img-post {
     width: 21.2%;
+  }
+  .aside-post-img {
+    width: 100%;
   }
   .aside-post-info {
     padding-left: 5.8%;
+    width: 73%;
   }
   .aside-data-post {
     font-size: 12px;
