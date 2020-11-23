@@ -1720,6 +1720,7 @@ position: relative;
 
 @media (orientation: landscape) and (max-width: 640px) {
   .trends-list {
+    flex-direction: row;
     flex-wrap: wrap;
   }
   .trends-item {
