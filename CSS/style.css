@@ -669,6 +669,7 @@ option {
 
 .mail-input:focus {
   border: 1px solid #b59f5b;
+  box-sizing: border-box;
   outline: none;  
 }
 
@@ -1565,15 +1566,13 @@ position: relative;
   .aside-post:nth-child(n+2) {
     margin-top: 6.7%;
   }
-  aside-img-post {
+  .aside-img-post {
     width: 21.2%;
   }
-  .aside-post-img {
-    width: 100%;
-  }
   .aside-post-info {
+    box-sizing: border-box;
     padding-left: 5.8%;
-    width: 73%;
+    flex-grow: 1;
   }
   .aside-data-post {
     font-size: 12px;
@@ -1613,7 +1612,6 @@ position: relative;
     margin-top: 7%;
   }
   .form-mail_label {
-    flex-grow: 1;
     height: 48px;
   }
   .mail-input {
@@ -1710,7 +1708,7 @@ position: relative;
     padding: 0 0 14%;
   }
   .socials-list {
-    padding: 9 0;
+    padding: 8.5% 0;
   }
   .socials-list_item:nth-child(n+2) {
     margin-left: 8%;
