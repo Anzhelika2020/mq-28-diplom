@@ -587,6 +587,7 @@ option {
 }
 
 .search-input {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   font-size: 0.8vw;
@@ -1587,14 +1588,16 @@ position: relative;
     height: 48px;
   }
   .form-search-label {
+    flex-basis: 80%;
     flex-grow: 1;
   }
   .search-input {
     font-size: 13px;
+    text-decoration: none;
   }
   .form-search-button {
     width: 48px;
-    flex-grow: 0;
+    flex: none; 
   }
   .section-mailing {
     margin-top: 13.3%;
@@ -1615,6 +1618,7 @@ position: relative;
   }
   .mail-input {
     font-size: 13px;
+    text-decoration: none;
   }
   .form-mail_button {
     height: 48px;
