@@ -414,6 +414,7 @@ option {
 }
 
 .post-img {
+  display: block;
   width: 100%;
   background-color: #eff6f1;
 }
@@ -539,6 +540,7 @@ option {
   width: 25.9%;
 }
 .aside-post-img {
+  display: block;
   width: 100%;
   background-color: #f4f7f6;
 }
@@ -549,6 +551,7 @@ option {
 }
 
 .aside-data-post {
+  display: block;
   font-size: 85.7%;
   line-height: normal;
   color: #000000;
@@ -1048,11 +1051,11 @@ position: relative;
     margin-top: 8%;
   }
   .post-img-box {
-    width: 49.2%;
+    width: 48.8%;
   }
   .post-info {
     box-sizing: border-box;
-    width: 47%;
+    width: 47.4%;
     margin-left: 3.8%;
   }
   .post-tag_item:nth-child(n+0) {
