@@ -111,7 +111,7 @@ body {
   width: 56.1%;
 }
 .popup-box {
-  displa: none;
+  display: none;
 }
 
 .popup-box::before {
@@ -1464,8 +1464,8 @@ position: relative;
   }
   .popup-subject-textarea {
     margin-top: 3.9%;
-    padding: 7.8% 4.3% 4.3% 7 8%;
-    height: 36.7vw;    
+    padding: 7.8% 4.3% 4.3% 7.1%;
+    height: 36.7vw;
     max-height: 36.7vw;
     min-height: 36.7vw;
   }
