@@ -111,7 +111,7 @@ body {
   width: 56.1%;
 }
 .popup-box {
-  display: none;
+  displa: none;
 }
 
 .popup-box::before {
