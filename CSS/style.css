@@ -110,8 +110,8 @@ body {
   margin: 10.8% auto 0;
   width: 56.1%;
 }
-.popup-bo {
-  display: none;
+.popup-box {
+  displa: none;
 }
 
 .popup-box::before {
@@ -137,7 +137,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
-  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
   font-size: 0.8vw;
 }
 
@@ -1518,9 +1519,7 @@ position: relative;
   .post:nth-child(n+2) {
     margin-top: 10%;
   }
-  .post-img {
-    width: 100%;
-  }
+ 
   .post-tags_list {
     font-size: 14px;
     margin-top: 4.8%;
