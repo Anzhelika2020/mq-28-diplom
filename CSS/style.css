@@ -111,7 +111,7 @@ body {
   width: 56.1%;
 }
 .popup-box {
-  displa: none;
+  display: none;
 }
 
 .popup-box::before {
@@ -130,8 +130,8 @@ body {
   position: fixed;
   z-index: 9999;
   width: 23.5%;
-  top: 0;
-  bottom: 0;
+  top: 3%;
+  bottom: 2%;
   left: 0;
   right: 0;
   display: flex;
